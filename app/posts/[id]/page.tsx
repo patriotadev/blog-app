@@ -5,11 +5,9 @@ import Button from "@/components/Button";
 import { Card, CardBody, CardFooter, CardHeader } from "@/components/Card";
 import Spinner from "@/components/Spinner";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
 export default function PostDetail ({ params }: { params: {id: string} }) {
-    const router = useRouter();
     const [post, setPost] = useState<any>();
     const [comments, setComments] = useState<any>();
     const [isLoading, setIsLoading] = useState<boolean>(false);
